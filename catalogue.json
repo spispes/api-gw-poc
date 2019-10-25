@@ -1,0 +1,35 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Catalogue",
+    "description": "API description in Markdown.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://development.telefonica.com/v1",
+      "description": "Development server"
+    },
+    {
+      "url": "https://staging.telefonica.com/v1",
+      "description": "Staging server"
+    },
+    {
+      "url": "https://api.telefonica.com/v1",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "Returns a list of products.",
+        "description": "Optional extended description in Markdown.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
