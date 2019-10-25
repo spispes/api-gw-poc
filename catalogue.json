@@ -7,15 +7,15 @@
   },
   "servers": [
     {
-      "url": "https://development.telefonica.com/v1",
+      "url": "https://development.myHost.com/products",
       "description": "Development server"
     },
     {
-      "url": "https://staging.telefonica.com/v1",
+      "url": "https://staging.myHost.com/products",
       "description": "Staging server"
     },
     {
-      "url": "https://api.telefonica.com/v1",
+      "url": "https://api.myHost.com/products",
       "description": "Production server"
     }
   ],
