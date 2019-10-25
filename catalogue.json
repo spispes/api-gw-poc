@@ -26,7 +26,36 @@
         "description": "Optional extended description in Markdown.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "A list of ptoducts",
+            "content":{
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/product"
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "product": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": "integer"
+          },
+          "model" : {
+            "type": "string"
+          },
+          "prize": {
+            "type": "number"
           }
         }
       }
